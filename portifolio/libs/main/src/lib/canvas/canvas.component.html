@@ -1,0 +1,20 @@
+<section class="main">
+  <div class="infos">
+    <h1 class="animate__animated animate__fadeInDown">
+      <p>Hello, I'm <span class="name">Giovanni Sarao Araki</span></p>
+      <p>I'm a front-end developer.</p>
+    </h1>
+    <div class="button">
+      <a href="#About"
+        >View about me
+        <span class="material-icons">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+  <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    (particlesLoaded)="particlesLoaded()"
+    (particlesInit)="particlesInit()"
+  ></ng-particles>
+</section>

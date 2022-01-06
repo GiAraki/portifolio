@@ -1,0 +1,118 @@
+<section class="about" #scroller>
+  <div *ngIf="show">
+    <div class="title">
+      <h2 class="animate__animated animate__backInUp">ABOUT</h2>
+    </div>
+    <div class="content">
+      <div class="animate__animated animate__backInLeft">
+        <div class="hexagon hexagon-profile-photo">
+          <div class="hexagon-in1"><div class="hexagon-in2"></div></div>
+        </div>
+        <div class="align-center">
+          <h3>Who am I?</h3>
+          <p>
+            I'm a Front-End Developer for
+            <a href="https://www.itau.com.br/" target="_blank" class="name"
+              >Itaú Unibanco</a
+            >
+            in São Paulo.
+            <br />
+            I have serious passion for client side of the web, animations and
+            creating intuitive, dynamic user interface.
+          </p>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="hex animate__animated animate__backInDown">
+          <div class="mini-hexagon">
+            <img src="./assets/imgs/icons8-angular.png" alt="Angular Icon" />
+          </div>
+        </div>
+        <div class="grid-template-areas">
+          <div class="hex animate__animated animate__backInLeft hex1">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-html.png" alt="Html Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInUp hex2">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-react.png" alt="React Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInRight hex3">
+            <div class="mini-hexagon">
+              <img
+                src="./assets/imgs/icons8-typescript.png"
+                alt="Typescript Icon"
+              />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInLeft hex4">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-css3.png" alt="Html Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInUp hex5">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-git.png" alt="Git Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInRight hex6">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-node.png" alt="Node Icon" />
+            </div>
+          </div>
+          <div class="hex animate__animated animate__backInLeft hex7">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-javascript.png" alt="Javascript Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInUp hex8">
+            <div class="mini-hexagon">
+              <img src="./assets/imgs/icons8-amazon.png" alt="AWS Icon" />
+            </div>
+          </div>
+
+          <div class="hex animate__animated animate__backInRight hex9">
+            <div class="mini-hexagon">
+              <img
+                src="./assets/imgs/icons8-mongodb.png"
+                alt="Mongodb Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-position" *ngIf="showAbout">
+    <div class="title">
+      <h2 class="animate__animated animate__backInUp">EDUCATION</h2>
+    </div>
+    <div class="content education">
+      <div class="img-grid animate__animated animate__backInLeft">
+        <img src="./assets/imgs/unip.png" alt="Unip Icon" />
+        <div>
+          <h3>Bachelor, Universidade Paulista, São José dos Campos</h3>
+          <p>January 2017 — December 2019</p>
+        </div>
+      </div>
+      <div class="img-grid animate__animated animate__backInRight">
+        <img src="./assets/imgs/igti.png" alt="IGTI Icon" />
+        <div>
+          <h3>
+            MBA, Institute of Management in Information Technology, São Paulo
+          </h3>
+          <p>MARCH 2021 — DECEMBER 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

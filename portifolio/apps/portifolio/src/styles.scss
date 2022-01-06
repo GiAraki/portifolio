@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
+@font-face {
+  font-family: Raleway-semibold;
+  src: url(assets/fonts/Raleway-SemiBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(assets/fonts/Raleway-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: Raleway-bold;
+  src: url(assets/fonts/Raleway-Bold.ttf) format('opentype');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 98%;
+  font-family: 'Raleway';
+  scroll-behavior: smooth;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-end {
+  text-align: end;
+}
+
+p {
+  line-height: 18pt;
+}
+
+.main {
+  height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #363636;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e31b6d;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__backInUp {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__backInDown {
+  --animate-duration: 1s;
+}
+
+// Hexagon class
+
+.mini-hexagon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 57.735%;
+  border-top: 1px solid #c51675;
+  border-color: #c51675;
+  border-bottom: 1px solid #c51675;
+}
+
+.mini-hexagon:before {
+  background-color: inherit;
+  content: '';
+  height: inherit;
+  position: absolute;
+  right: 42.1325%;
+  top: 0;
+  transform: rotateZ(60deg);
+  width: inherit;
+  border-top: 1px solid #c51675;
+  border-color: #c51675;
+  border-bottom: 1px solid #c51675;
+}
+
+.mini-hexagon:after {
+  background-color: inherit;
+  content: '';
+  height: inherit;
+  position: absolute;
+  right: 42.1325%;
+  top: 0;
+  transform: rotateZ(-60deg);
+  width: inherit;
+  border-top: 1px solid #c51675;
+  border-color: #c51675;
+  border-bottom: 1px solid #c51675;
+}

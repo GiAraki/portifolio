@@ -1,0 +1,45 @@
+.name {
+  color: #e31b6d;
+}
+
+.infos {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  font-size: 2vw;
+  line-height: 19pt;
+  font-family: 'Raleway-semibold';
+  color: #fff;
+}
+
+.button {
+  position: relative;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.7s;
+  font-size: 1.5vw;
+  padding: 12px 50px 12px 20px;
+  .material-icons {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    transition: all 0.7s;
+  }
+}
+.button:hover {
+  background-color: #e31b6d;
+  border-color: #e31b6d;
+  span {
+    transform: rotate(90deg);
+  }
+}
+
+::ng-deep {
+  .tsparticles-canvas-el {
+    z-index: -1 !important;
+  }
+}
