@@ -9,7 +9,9 @@
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/main"],
+          "outputs": [
+            "coverage/libs/main"
+          ],
           "options": {
             "jestConfig": "libs/main/jest.config.js",
             "passWithNoTests": true
@@ -35,8 +37,13 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
+            "allowedCommonJsDependencies": [
+              "tsparticles"
+            ],
             "outputPath": "dist/apps/portifolio",
             "index": "apps/portifolio/src/index.html",
             "main": "apps/portifolio/src/main.ts",
@@ -47,7 +54,9 @@
               "apps/portifolio/src/favicon.ico",
               "apps/portifolio/src/assets"
             ],
-            "styles": ["apps/portifolio/src/styles.scss"],
+            "styles": [
+              "apps/portifolio/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -112,7 +121,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/portifolio"],
+          "outputs": [
+            "coverage/apps/portifolio"
+          ],
           "options": {
             "jestConfig": "apps/portifolio/jest.config.js",
             "passWithNoTests": true
@@ -140,14 +151,20 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/portifolio-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/portifolio-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["portifolio"]
+      "implicitDependencies": [
+        "portifolio"
+      ]
     }
   }
 }

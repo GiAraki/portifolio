@@ -25,6 +25,14 @@ body {
   scroll-behavior: smooth;
 }
 
+h2 {
+  font-size: 20pt;
+}
+
+.relative {
+  position: relative;
+}
+
 .align-center {
   text-align: center;
 }
@@ -33,13 +41,22 @@ body {
   text-align: end;
 }
 
+li {
+  font-family: 'Raleway';
+  font-size: 10pt;
+  line-height: 15pt;
+}
+
+h1 {
+  font-size: 23pt;
+}
+
 p {
-  line-height: 18pt;
+  line-height: 15pt;
 }
 
 .main {
   height: 100vh;
-  padding: 20px;
 }
 
 .title {
@@ -62,16 +79,16 @@ a {
 }
 
 .animate__animated.animate__backInRight {
-  --animate-duration: 1s;
+  --animate-duration: 1.4s;
 }
 .animate__animated.animate__backInLeft {
-  --animate-duration: 1s;
+  --animate-duration: 1.4s;
 }
 .animate__animated.animate__backInUp {
-  --animate-duration: 1s;
+  --animate-duration: 1.4s;
 }
 .animate__animated.animate__backInDown {
-  --animate-duration: 1s;
+  --animate-duration: 1.4s;
 }
 
 // Hexagon class
@@ -113,4 +130,89 @@ a {
   border-top: 1px solid #c51675;
   border-color: #c51675;
   border-bottom: 1px solid #c51675;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .content {
+    grid-template-columns: 1fr !important;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 16pt;
+  }
+
+  .skills {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .education-position {
+    top: -200px;
+  }
+
+  .img-grid {
+    grid-template-columns: 100% !important;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr !important;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 16pt;
+  }
+
+  .skills {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .education-position {
+    top: -200px;
+  }
+
+  .img-grid {
+    grid-template-columns: 100% !important;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .content {
+    grid-template-columns: 1fr !important;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 16pt;
+  }
+
+  .skills {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .education-position {
+    top: -200px;
+  }
+
+  .img-grid {
+    grid-template-columns: 100% !important;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
 }

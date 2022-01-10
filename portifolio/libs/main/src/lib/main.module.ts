@@ -5,9 +5,10 @@ import { AboutComponent } from './about/about.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { ContactComponent } from './contact/contact.component';
 import {NgParticlesModule} from "ng-particles";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  imports: [CommonModule, NgParticlesModule],
+  imports: [CommonModule, NgParticlesModule, FontAwesomeModule],
   declarations: [
     CanvasComponent,
     AboutComponent,

@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@fortawesome/angular-fontawesome": "^0.10.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@nrwl/angular": "13.3.11",
     "animate.css": "^4.1.1",
     "material-icons": "^1.10.4",
