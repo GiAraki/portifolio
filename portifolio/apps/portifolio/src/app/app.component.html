@@ -1,6 +1,20 @@
 <div id="container">
+  <div id="loader" *ngIf="loading">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="loading"></div>
+  </div>
+
   <portifolio-canvas></portifolio-canvas>
-  <portifolio-about id='About'></portifolio-about>
-  <portifolio-companies></portifolio-companies>
-  <portifolio-contact></portifolio-contact>
+  <div *ngIf="!loading">
+    <portifolio-about id="About"></portifolio-about>
+    <portifolio-companies></portifolio-companies>
+    <portifolio-contact></portifolio-contact>
+  </div>
 </div>
